@@ -1,0 +1,6 @@
+framework module Pods_KJAspectsDemo_KJAspectsDemoUITests {
+  umbrella header "Pods-KJAspectsDemo-KJAspectsDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
