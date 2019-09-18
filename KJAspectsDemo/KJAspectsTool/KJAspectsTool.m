@@ -987,7 +987,7 @@ static void aspect_deregisterTrackedSelector(id self, SEL selector) {
 
 @interface KJAspectsTool ()
 /// 当前Hook的实例
-@property(nonatomic,strong) id kj_instance;
+@property(nonatomic,weak) id kj_instance;
 /// 被 Hook 方法的原始 invocation
 @property(nonatomic,strong) NSInvocation *kj_originalInvocation;
 /// 被 Hook 方法的所有参数装箱 这是懒惰的(懒加载的)

@@ -54,7 +54,7 @@ typedef NS_OPTIONS(NSUInteger, KJAspectOptions) {
 
 /********************** 仅在回调中使用有效 **********************/
 /// 当前Hook的实例
-@property(nonatomic,strong,readonly) id kj_instance;
+@property(nonatomic,weak,readonly) id kj_instance;
 /// 被 Hook 方法的原始 invocation  NSInvocation相关文档:https://www.jianshu.com/p/06b832b10283
 @property(nonatomic,strong,readonly) NSInvocation *kj_originalInvocation;
 /// 被 Hook 方法的所有参数装箱 这是懒惰的(懒加载的)
